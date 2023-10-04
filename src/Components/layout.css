@@ -14,6 +14,11 @@
   .navbar-nav{
       text-align: center;
   }
+  @media (max-width:990px) {
+    .navbar-collapse ul{
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+  }
   .navbar-img {
     max-width: 5rem; /* Adjust the size as needed */
     margin-right: 1em;

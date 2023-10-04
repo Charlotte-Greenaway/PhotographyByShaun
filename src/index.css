@@ -1,0 +1,20 @@
+body{
+    background-color: #f9f9e6;
+}
+
+.fly-fade-in-element {
+    opacity: 0; /* Start with opacity set to 0 */
+    transform: translateX(-50px); /* Start position off-screen */
+    animation: flyFadeIn 1.5s forwards ease-in-out;
+}
+
+@keyframes flyFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -25,13 +25,18 @@ const Layout = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="blog">
-                Portfolio
+              <Link className="nav-link" to="/weddings">
+                Weddings
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
-                About
+              <Link className="nav-link" to="/portraits">
+                Portraits
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/animalportraits">
+                Animals
               </Link>
             </li>
             <li className="nav-item">
@@ -48,7 +53,7 @@ const Layout = () => {
             <div class="row">
                 <div class="col-md-12">
                     <p>&copy; 2023 Photography By Shaun</p>
-                    <p>Contact: info@example.com</p>
+                    <p>Contact: pbshaun@gmail.com</p>
                 </div>
             </div>
         </div>

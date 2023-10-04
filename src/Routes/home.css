@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 4dvh 0;
-
+    opacity:0;
   }
   @media(max-width:990px){
     .widgetHeader{
@@ -85,5 +85,14 @@
   }
   .cta{
     width: 70%;
-    margin: 5dvh auto;
+    margin: 10dvh auto;
+  }
+
+  .navbar-toggler{
+    outline: none !important;
+    border: none;
+  }
+  .nav-link{
+    width: fit-content;
+    margin: auto;
   }
