@@ -2,8 +2,14 @@
   font-family: 'White Garden Wide'; /* Define the font family name */
   src: url('./fonts/whitegardenwide.otf') format('opentype'); /* Specify the path to the OTF font file */
 }
+.display-6{
+  font-size: 1.75rem;;
+}
+.catchLine{
+  font-size: 1rem;
+  font-weight: 400;
 
-
+}
 #ctaText{
     margin-top: 10dvh;
     margin-left: 5%;

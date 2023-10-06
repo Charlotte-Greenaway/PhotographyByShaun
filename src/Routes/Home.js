@@ -56,12 +56,12 @@ const Home = () => {
         <>
         <div id="frontPage" style={divStyle}>
             <div id="ctaText">
-                <h3 className="display-6">
+                <h1 className="display-6">
                 Capturing Timeless Moments
-                </h3>
-                <p>
+                </h1>
+                <h2 className="catchLine">
                 Wedding | Portrait | Animal Portraits
-                </p>
+                </h2>
             </div>
         </div>
         
