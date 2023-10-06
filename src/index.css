@@ -5,7 +5,7 @@ body{
 .fly-fade-in-element {
     opacity: 0; /* Start with opacity set to 0 */
     transform: translateX(-50px); /* Start position off-screen */
-    animation: flyFadeIn 1.5s forwards ease-in-out;
+    animation: flyFadeIn 1s forwards ease-in-out;
 }
 
 @keyframes flyFadeIn {

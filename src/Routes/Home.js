@@ -1,9 +1,10 @@
 import {useState, useEffect, useRef} from 'react';
-import TestImage from '../Images/luna.jpg';
-import WeddingCover from '../Images/weddingCover.jpg';
-import PortraitCover from '../Images/portraitCover.jpg';
-import DogCover from '../Images/dogCover.jpg';
-import './home.css';
+import { Link } from "react-router-dom";
+import TestImage from '../Images/homePage/luna.jpg';
+import WeddingCover from '../Images/homePage/weddingCover.jpg';
+import PortraitCover from '../Images/homePage/portraitCover.jpg';
+import DogCover from '../Images/homePage/dogCover.jpg';
+import './css/home.css';
 const Home = () => {
 
     const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +16,7 @@ const Home = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5, 
+      threshold: 0.1, 
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -67,18 +68,24 @@ const Home = () => {
         <div id="galleryWidgets" ref={elementRef}  className={`${isVisible ? 'fly-fade-in-element' : ''}`}>
         <h3 className="alignCenter headerText">Photo Galleries</h3>
             <hr></hr>
-            <div className="galleryWidget">
-                <h3 className="widgetHeader">Portraits</h3>
-                <img src={PortraitCover} alt="portrait" className="widgetImage"/>
-            </div>
-            <div className="galleryWidget">
-                <h3 className="widgetHeader">Weddings</h3>
-                <img src={WeddingCover} alt="bride" className="widgetImage"/>
-            </div>
-            <div className="galleryWidget">
-                <h3 className="widgetHeader">Animals</h3>
-                <img src={DogCover} alt="dog" className="widgetImage"/>
-            </div>
+            <Link to="/portraits">
+              <div className="galleryWidget">
+                  <h3 className="widgetHeader">Portraits</h3>
+                  <img src={PortraitCover} alt="portrait" className="widgetImage"/>
+              </div>
+            </Link>
+            <Link to="/weddings">
+              <div className="galleryWidget">
+                  <h3 className="widgetHeader">Weddings</h3>
+                  <img src={WeddingCover} alt="bride" className="widgetImage"/>
+              </div>
+            </Link>
+            <Link to="/animals">
+              <div className="galleryWidget">
+                  <h3 className="widgetHeader">Animals</h3>
+                  <img src={DogCover} alt="dog" className="widgetImage"/>
+              </div>
+            </Link>
         </div>
         <hr></hr>
         <div className="cta">

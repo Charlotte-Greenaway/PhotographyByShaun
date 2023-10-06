@@ -18,6 +18,10 @@
     .navbar-collapse ul{
       background-color: rgba(255, 255, 255, 0.1) !important;
     }
+    .nav-item a:hover {
+      transform: none;
+      background-color: transparent;
+    }
   }
   .navbar-img {
     max-width: 5rem; /* Adjust the size as needed */
@@ -31,4 +35,23 @@
   }
   footer{
     margin-top: 5dvh;
+  }
+
+  .dropdown-menu{
+    background-color: rgb(255, 255, 255, 0.1);
+    border: none;
+    color:rgba(255,255,255,.75)
+  }
+  .dropdown-item{
+    color:rgba(255,255,255,.75)
+  }
+  .dropdown-item:hover{
+    background-color: rgb(255, 255, 255, 0.1);
+  }
+
+  .nav-item a:hover {
+    color:white;
+  }
+  .navbar{
+    z-index: 100;
   }
