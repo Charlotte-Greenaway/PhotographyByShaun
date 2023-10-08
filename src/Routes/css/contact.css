@@ -100,7 +100,7 @@
     width: 100%;
     background-position: 50% 0%;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: 70vh;
   }
 }
