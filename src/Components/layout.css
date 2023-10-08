@@ -38,15 +38,15 @@
   }
 
   .dropdown-menu{
-    background-color: rgb(255, 255, 255, 0.1);
-    border: none;
+    background-color: rgb(255, 255, 255, 0.1)!important;
+    border: none!important;
     color:rgba(255,255,255,.75)
   }
   .dropdown-item{
     color:rgba(255,255,255,.75)
   }
   .dropdown-item:hover{
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgb(255, 255, 255, 0.1)!important;
   }
 
   .nav-item a:hover {

@@ -7,9 +7,17 @@ display: none;
 .show{
     display: block !important;
 }
-.carousel-inner {
-    overflow: hidden;
-    height: 100dvh;
+@media (min-width:760px) {
+    .carousel-inner {
+        overflow: hidden;
+        height: 100dvh;
+    }
+}
+@media (max-width:760px){
+    .carousel-inner {
+        overflow: hidden;
+        height: 35dvh;
+    }
 }
 
 .img-fluid {
