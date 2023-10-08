@@ -1,7 +1,16 @@
 import { Link, Outlet } from "react-router-dom";
 import './layout.css';
+import {useRef} from 'react';
 
 const Layout = () => {
+  const navbarRef = useRef(null); // Create a ref for the collapse element
+
+  // Function to close the collapse menu
+  const closeCollapse = () => {
+    if (navbarRef.current) {
+      navbarRef.current.classList.remove("show");
+    }
+  };
 
   return (
     <>
@@ -17,15 +26,15 @@ const Layout = () => {
   >
     <span className="navbar-toggler-icon"></span>
   </button>
-  <div className="collapse navbar-collapse" id="navbarNav">
+  <div className="collapse navbar-collapse" id="navbarNav" ref={navbarRef}>
     <ul className="navbar-nav ml-auto">
       <li className="nav-item">
-        <Link className="nav-link" to="/">
+        <Link className="nav-link" to="/" >
           Home <span className="sr-only">(current)</span>
         </Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="https://www.facebook.com/profile.php?id=100045854456172" target="_blank">
+        <Link className="nav-link" to="https://www.facebook.com/profile.php?id=100045854456172" target="_blank" rel="noopener" onClick={closeCollapse}>
           Blog <span className="sr-only">(current)</span>
         </Link>
       </li>
@@ -45,19 +54,19 @@ const Layout = () => {
           className="dropdown-menu"
           aria-labelledby="navbarDropdownPortfolio"
         >
-          <Link className="dropdown-item" to="/weddings">
+          <Link className="dropdown-item" to="/weddings" onClick={closeCollapse}>
             Weddings
           </Link>
-          <Link className="dropdown-item" to="/portraits">
+          <Link className="dropdown-item" to="/portraits" onClick={closeCollapse}>
             Portraits
           </Link>
-          <Link className="dropdown-item" to="/animalportraits">
+          <Link className="dropdown-item" to="/animalportraits" onClick={closeCollapse}>
             Animals
           </Link>
         </div>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/contact">
+        <Link className="nav-link" to="/contact" onClick={closeCollapse}>
           Contact
         </Link>
       </li>
@@ -70,7 +79,7 @@ const Layout = () => {
             <div className="row">
                 <div className="col-md-12">
                     <p>&copy; 2023 Photography By Shaun</p>
-                    <p>Contact: pbshaun@gmail.com</p>
+                    <p>Email: <a href="mailto:name@rapidtables.com?subject=Website%enquiry">pbshaun@gmail.com</a></p>
                 </div>
             </div>
         </div>

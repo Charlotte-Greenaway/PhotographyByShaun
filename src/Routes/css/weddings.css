@@ -1,3 +1,26 @@
 .carousel-inner img{
     width:100%;
 }
+.modal{
+display: none;
+}
+.show{
+    display: block !important;
+}
+.carousel-inner {
+    overflow: hidden;
+    height: 100dvh;
+}
+
+.img-fluid {
+    max-width: 100dvw;
+    max-height: 90dvh;
+}
+
+#modalBlur{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top:0
+}
