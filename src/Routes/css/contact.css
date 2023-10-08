@@ -93,3 +93,25 @@
   padding: 20px; 
   margin-top: -3%;
 }
+
+@media (max-width: 768px) {
+  #contactPic{
+    height: 70vh;
+    width: 100%;
+    background-position: 50% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 70dvh;
+  }
+}
+@media (min-width:767px) {
+  #contactPic{
+
+   height: 70vh;
+    width: 100%;
+    background-position-x: center;
+    background-position-y: 20%;
+    background-size: cover;
+    background-attachment: fixed
+  }
+}

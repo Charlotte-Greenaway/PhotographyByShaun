@@ -38,12 +38,6 @@ const Contact = () => {
 
   const bgStyle = {
     backgroundImage: `url(${contactPortrait})`,
-    height: "70vh",
-    width: "100%",
-    backgroundPositionX: "center",
-    backgroundPositionY: "20%",
-    backgroundSize: "cover",
-    backgroundAttachment: "fixed",
   };
 
   return (
