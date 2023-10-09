@@ -29,7 +29,7 @@ const Layout = () => {
   <div className="collapse navbar-collapse" id="navbarNav" ref={navbarRef}>
     <ul className="navbar-nav ml-auto">
       <li className="nav-item">
-        <Link className="nav-link" to="/" >
+        <Link className="nav-link" to="/" onClick={closeCollapse}>
           Home <span className="sr-only">(current)</span>
         </Link>
       </li>

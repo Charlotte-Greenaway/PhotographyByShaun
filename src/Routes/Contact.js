@@ -51,7 +51,7 @@ const Contact = () => {
           <i class="fa fa-envelope" style={{fontSize:36+"px"}}></i>
         </div>
         </div>
-        <form method="post">
+        <form method="post" data-netlify="true">
           <h3>Drop Me a Message</h3>
           <div className="row">
             <div className="col-md-6">
