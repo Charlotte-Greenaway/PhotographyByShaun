@@ -20,6 +20,7 @@ const Contact = () => {
         </div>
         </div>
         <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact"/>
           <h3>Drop Me a Message</h3>
           <div className="row">
             <div className="col-md-6">
