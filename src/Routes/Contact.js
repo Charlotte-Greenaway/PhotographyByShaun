@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import contactPortrait from "../Images/contact/contactPortrait.jpg";
 import "./css/contact.css";
 
 const Contact = () => {
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const messageRef = useRef(null);
+  const phoneRef = useRef(null);
+
+  
+
   const bgStyle = {
     backgroundImage: `url(${contactPortrait})`,
   };
@@ -19,7 +26,7 @@ const Contact = () => {
           <i class="fa fa-envelope" style={{fontSize:36+"px"}}></i>
         </div>
         </div>
-        <form name="contact" method="POST" data-netlify="true">
+        <form method="post" name="contact">
           <input type="hidden" name="form-name" value="contact"/>
           <h3>Drop Me a Message</h3>
           <div className="row">
@@ -30,6 +37,7 @@ const Contact = () => {
                   name="txtName"
                   className="form-control"
                   placeholder="Your Name *"
+                  ref={nameRef}
                 />
               </div>
               <div className="form-group">
@@ -38,6 +46,7 @@ const Contact = () => {
                   name="txtEmail"
                   className="form-control"
                   placeholder="Your Email *"
+                  ref={emailRef}
                 />
               </div>
               <div className="form-group">
@@ -46,6 +55,7 @@ const Contact = () => {
                   name="txtPhone"
                   className="form-control"
                   placeholder="Your Phone Number *"
+                  ref={phoneRef}
                 />
               </div>
               <div className="form-group">
