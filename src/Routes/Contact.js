@@ -5,37 +5,6 @@ import contactPortrait from "../Images/contact/contactPortrait.jpg";
 import "./css/contact.css";
 
 const Contact = () => {
-  const [result, setResult] = useState("");
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const messageRef = useRef(null);
-  const phoneRef = useRef(null);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("name", nameRef.current.value);
-    formData.append("email", emailRef.current.value);
-    formData.append("message", messageRef.current.value);
-    formData.append("phone", phoneRef.current.value);
-
-
-    axios
-      .post("http://localhost/server.php", formData)
-      .then((res) => {
-        setResult(res.data);
-      })
-      .catch((error) => {
-        console.warn(error);
-      });
-
-    nameRef.current.value = "";
-    emailRef.current.value = "";
-    messageRef.current.value = "";
-    phoneRef.current.value = "";
-
-  };
-
   const bgStyle = {
     backgroundImage: `url(${contactPortrait})`,
   };
@@ -51,7 +20,7 @@ const Contact = () => {
           <i class="fa fa-envelope" style={{fontSize:36+"px"}}></i>
         </div>
         </div>
-        <form method="post" data-netlify="true">
+        <form method="post" data-netlify="true" action>
           <h3>Drop Me a Message</h3>
           <div className="row">
             <div className="col-md-6">
@@ -61,7 +30,6 @@ const Contact = () => {
                   name="txtName"
                   className="form-control"
                   placeholder="Your Name *"
-                  ref={nameRef}
                 />
               </div>
               <div className="form-group">
@@ -70,7 +38,6 @@ const Contact = () => {
                   name="txtEmail"
                   className="form-control"
                   placeholder="Your Email *"
-                  ref={emailRef}
                 />
               </div>
               <div className="form-group">
@@ -79,7 +46,6 @@ const Contact = () => {
                   name="txtPhone"
                   className="form-control"
                   placeholder="Your Phone Number *"
-                  ref={phoneRef}
                 />
               </div>
               <div className="form-group">
@@ -87,7 +53,6 @@ const Contact = () => {
                   type="submit"
                   name="btnSubmit"
                   className="btnContact"
-                  onClick={handleSubmit}
                 />
               </div>
             </div>
@@ -97,10 +62,8 @@ const Contact = () => {
                   name="txtMsg"
                   className="form-control text"
                   placeholder="Your Message *"
-                  ref={messageRef}
                 ></textarea>
               </div>
-              <p>{result}</p>
             </div>
           </div>
         </form>
