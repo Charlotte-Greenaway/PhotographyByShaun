@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react";
-import axios from "axios";
+import React from "react";
 
 import contactPortrait from "../Images/contact/contactPortrait.jpg";
 import "./css/contact.css";
