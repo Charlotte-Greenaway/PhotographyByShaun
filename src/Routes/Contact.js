@@ -72,6 +72,7 @@ const Contact = () => {
                   name="txtMsg"
                   className="form-control text"
                   placeholder="Your Message *"
+                  ref={messageRef}
                 ></textarea>
               </div>
             </div>
