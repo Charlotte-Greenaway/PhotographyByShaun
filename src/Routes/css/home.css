@@ -80,8 +80,8 @@
   transition: all 0.5s ease;
 }
   hr{
-    margin-top: 2dvh;
     width: 90%;
+    margin: 3rem auto !important;
   }
   .alignCenter{
     text-align: center;
