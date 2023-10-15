@@ -1,4 +1,4 @@
-.carousel-inner img{
+/* .carousel-inner img{
     width:100%;
 }
 .modal{
@@ -23,12 +23,45 @@ display: none;
 .img-fluid {
     max-width: 100dvw;
     max-height: 90dvh;
+}*/
+.show{
+    display: block !important;
 }
-
 #modalBlur{
-    position: absolute;
+    position: fixed;
     height:100%;
     width:100%;
     background-color: rgba(0, 0, 0, 0.6);
     top:0
+} 
+@font-face {
+    font-family: 'White Garden Wide'; /* Define the font family name */
+    src: url('./fonts/whitegardenwide.otf') format('opentype'); /* Specify the path to the OTF font file */
+  }
+
+.jumbotron {
+    border-radius: 10px;
+    background-color: transparent;
+}
+.weddingHead{
+    background-color: #9f9f5a
+}
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+.card-text {
+    font-size: 14px;
+}
+section {
+    padding: 60px 0;
+}
+.wgh{
+    font-family: 'White Garden Wide',  sans-serif;
 }

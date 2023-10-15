@@ -66,7 +66,7 @@ const Home = () => {
         </div>
         
         <div id="galleryWidgets" ref={elementRef}  className={`${isVisible ? 'fly-fade-in-element' : ''}`}>
-        <h3 className="alignCenter headerText">Photo Galleries</h3>
+        <h3 className="display-4 alignCenter">Photo Galleries</h3>
             <hr></hr>
             <Link to="/portraits">
               <div className="galleryWidget">

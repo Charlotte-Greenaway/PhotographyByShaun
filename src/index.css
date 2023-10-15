@@ -2,6 +2,7 @@ body{
     background-color: #f9f9e6 !important;
 }
 
+
 .fly-fade-in-element {
     opacity: 0; /* Start with opacity set to 0 */
     transform: translateX(-50px); /* Start position off-screen */
